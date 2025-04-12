@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #cccccccf; */
+    background: linear-gradient(to right, #F28383 10%, #9D6CD2 30%, #481EDC 90%); 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b898684;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ nav  ul li {
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fa-solid{
+   color:rgb(200, 34, 34);
+    padding: 5px;
+}
+
+
+nav ul li  a {
+    padding: 22px;
+    line-height: 30px;
+    text-decoration: none;
+    color: hsl(244, 38%, 86%);
+    font-weight: bold;
+    transition: color 0.3s;
+    border-radius:100px;
+
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: #ede3e3;
+    border-color:#000;
+}
+nav ul li a.active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 100px;}
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+} */
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #eccfcf;
+    border-radius: 5px;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.contact-info {
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btn {
+    /* padding: 5px 10px;  Reduce padding to make buttons smaller */
+    font-size: 20px;    /* Reduce font size */
+    width: auto;        /* Ensure button width adjusts based on content */
+    min-width: 80px;    /* Prevent it from being too small */
+    background-color: rgb(88, 88, 145);
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.btn a{
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps default text color */
+    background: none;
+}
+
+small,
+h2 {
+    background-color: #ffffff;
+}
+
+a {
+    /* background-color: #f5d6d6; */
+    color: #4b5956;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    column-gap: 50px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    
+    width: calc(33.33% - 20px); 
+    /* min-width: 280px;  */
+    max-width: 400px; 
+    margin-top: 70px;
+    /* height: 500px; */
+    /* gap:30px; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body:hover {
+    transform: scale(1.05);
+}
+.img-div {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+    /* border-radius: 1em 1em 0em 0em; */
+    overflow: hidden;
+}
+
+.descrip-div {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    line-height: 1.0;
+}
+
+.btnn {
+    text-align: center;
+    margin: 1px 0 ;
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #f8f9fa8c;
+    color: white;
+    border: none;font-size: 20px;    /* Reduce font size */
+    width: auto;        /* Ensure button width adjusts based on content */
+    min-width: 80px; 
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width:1500px) {
+    .card-body {
+        width: calc(50% - 5px); /* 2 cards per row */
+    }
+    .container {
+        gap: 40px; /* Reduce gap between cards */
+    }
+}
+@media (max-width: 1024px) {
+    .card-body {
+        width: calc(50% - 5px); /* 2 cards per row */
+    }
+    .container {
+        gap: 10px; /* Reduce gap between cards */
+    }
+}
+@media (max-width: 878px) {
+    .card-body {
+        width: calc(50% - 10px); /* 2 cards per row */
+    }
+    .container {
+        gap: 10px; /* Reduce gap between cards */
+    }
+}
+@media (max-width:637px) {
+    .card-body {
+        width: calc(50% -15px); /* 2 cards per row */
+    }
+    .container {
+        gap: 5px; /* Reduce gap between cards */
+    }
+}
+/* ✅ For Small Mobiles (Up to 450px) → 1 card per row */
+@media (max-width: 500px) {
+    .card-body {
+        width:100%; /* Full width, 1 card per row */
+    }
+}
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 824px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        left: 0;
+        background-color: #222;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        padding: 5px;
+        width: 100%;
+    }
+
+    /* Show Hamburger Menu */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/* 📱 Mobile View (Below 768px) */
+@media screen and (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        left: 0;
+        background-color: #222;
+        text-align: center;
+        color: #e5dddd;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        padding: 5px;
+        width: 100%;
+    }
+
+    /* Show Hamburger Menu */
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+    }
+}

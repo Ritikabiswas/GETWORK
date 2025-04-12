@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- <link rel="html" href="login.html"> -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img class="img-div" src="images/WhatsApp_Image_2025-03-22_at_18.47.24-removebg-preview.png" width="100%" height="100%">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="findjob.html">FIND JOB</a></li>
+            <li><a href="postform.html">POST JOB</a></li>
+            <li><a href="learn.html">LEARN SKILL</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="login.html">LOGIN/SIGNUP</a></li>
+        </ul>
+    
+        <div class="menu-toggle">&#9776;</div> <!-- Hamburger Menu -->
+    </nav>
+    
+    
+    <div class="container">
+        <div id="mid">
+            GET WORK
+        </div>
+        <aside class="carousel">
+            <div class="carousel__wrapper">
+                <div class="item" id="slide-0"><img
+                        src="images\aggri.jpeg"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-1"><img
+                        src="images\crafting.jpeg"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-2"><img
+                        src="images\construction worker.webp"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-3"><img
+                        src="images\farming.jpeg"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-4"><img
+                        src="images\trading.webp"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-5"><img
+                        src="images\stitching.jpeg"
+                        alt="" width="418" height="418" /></div>
+                <div class="item" id="slide-6"><img
+                        src="images\softskills.jpg
+                        "
+                        alt="" width="418" height="418" /></div>
+            </div>
+        </aside>
+    </div>
+    <section class="pop-container">
+        <div class="p-container" id="p-container">
+            <!-- <div>vvvvvv</div> -->
+            <div class="form-container register-container">
+                <form action="#">
+                    <h1>TOUR GUIDE </h1>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button onclick="refreshPage()">Register</button>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                        <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="" class="social">
+                        <i class="lni lni-github"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container login-container">
+                <form action="#">
+                    <h1>TOUR GUIDE</h1>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label>Remember me</label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <a href="login.html"><button>Login</button></a>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                        <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="" class="social">
+                        <i class="lni lni-github"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="title">Welcome <br> Back!</h1>
+                        <p> If You have an account, login here and have fun</p>
+                        <button class="ghost" id="login">Login
+                        <i class="lni lni-arrow-left login"></i>
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title">Start your <br> journey now</h1>
+                        <p>if you don't have an account yet, join us and start your journey.</p>
+                        <button class="ghost" id="register">Register
+                        <i class="lni lni-arrow-right register"></i>
+                        </button>
+                    </div>
+                    <div class="close-btn">&times;</div>
+                </div>
+            </div>
+        </div>
+        <div class="small-container" id="container">
+            <!-- Register Form Container -->
+            <div class="small-form-container small-screen-register-container" id="register-form">
+                <form action="#">
+                    <h1>TOUR GUIDE</h1>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button type="button" onclick="showLogin()">Register</button>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                        <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="" class="social"><i class="lni lni-github"></i></a>
+                    </div>
+                    <div class="helper-message">
+                        <p>If You have an account, login here and have fun</p>
+                        <button type="button" id="go-to-login-btn" onclick="showLogin()">Login</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Login Form Container -->
+            <div class="small-form-container small-screen-login-container" id="login-form" style="display: none;">
+                <form action="#">
+                    <h1>TOUR GUIDE</h1>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label>Remember me</label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <a href="#"><button type="button">Login</button></a>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="" target="_blank"><i class="lni lni-google"></i></a>
+                        <a href="" class="social"><i class="lni lni-linkedin-original"></i></a>
+                        <a href="" class="social"><i class="lni lni-github"></i></a>
+                    </div>
+                    <div class="helper-message">
+                        <p>If You don't have an account, Register here.</p>
+                        <button type="button" id="go-to-register-btn" onclick="showRegister()">Register</button>
+                    </div>
+                </form>
+            </div>
+            <!-- <div>vvvvvv</div> -->
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
